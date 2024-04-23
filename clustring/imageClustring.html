@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>581677</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell markdown" data-collapsed="false">
+<h1>Part 0: Featurs Extraction</h1>
+<h2>Why we extract features and dont just read the pixels?</h2>
+<p>In image clustering, extracting features from images is a crucial step for several reasons. Reading the pixels directly may not be efficient or effective in capturing the essential information about the images, which is necessary for clustering.here are some important reason for this:</p>
+<ul>
+    <li><b>Dimensionality Reduction:</b>Images contain a vast amount of data, as they have a high number of pixels. Reading the pixels directly would involve dealing with a large number of dimensions. Feature extraction helps reduce this dimensionality, making the process more manageable and computationally efficient.</li>
+    <li><b>Robustness to Noise:</b>Images can contain noise or variations in lighting, which may affect the raw pixel values. Feature extraction helps to filter out noise and focus on the essential characteristics of the images, making the clustering process more robust and accurate.</li>
+    <li><b>Generalization:</b>Feature extraction allows the algorithm to generalize and recognize patterns across different images. This generalization helps in clustering images that may not be identical but share similar features or characteristics.</li>
+</ul>
+<h2>Techniques</h2>
+<p>
+There are various techniques for feature extraction in image processing. Some of the most common methods include:</p>
+<ol>
+    <li><b>Principal Component Analysis (PCA):</b> PCA is a linear technique that transforms the original image data into a new coordinate system, where the axes represent the principal components of the image data. It helps reduce dimensionality while retaining most of the image's information.</li>
+    <li><b>Singular Value Decomposition (SVD):</b>SVD is another linear transformation technique similar to PCA. It decomposes the image matrix into three matrices (U, Σ, and V). The columns of U and V represent the features, and the diagonal elements of Σ represent the importance of each feature. SVD is often used for dimensionality reduction in image processing.</li>
+    <li><b>Convolutional Neural Networks (CNNs):</b>CNNs are a deep learning-based approach to feature extraction. They learn hierarchical feature representations by applying multiple layers of convolutions and pooling operations. CNNs can automatically extract relevant features from raw image data, making them powerful tools for various computer vision tasks, such as image classification, object detection, and segmentation.</li>
+</ol>
+<h2>what preprocessing need before images entered on model?</h2>
+<p>Before entering images into a model, it's essential to preprocess them to ensure they are suitable for the machine learning or deep learning algorithms. Here are some important preprocessing steps for image data:</p>
+<ul>
+    <li><b>Resizing:</b>Resize the images to a uniform size that matches the input requirements of your model. This helps the model process images more efficiently and reduces computational complexity.</li>
+    <li><b>Normalization:</b>Normalize the pixel values of the images to a specific range, typically between 0 and 1 or -1 and 1. This step ensures that all images have similar pixel values, preventing any one image from dominating the learning process due to its high intensity or contrast.</li>
+    <li><b>Label Encoding (for supervised learning):</b>If your images have associated labels or categories, encode these labels as numerical values. This is necessary for many supervised learning algorithms that require numerical input.</li>
+</ul>
+</div>
+<div class="cell markdown" data-collapsed="false">
+<h1>Part1: Kmeans vs. DBSCAN</h1>
+<p>K-Means and DBSCAN are both popular clustering algorithms used in machine learning and data analysis for partitioning data into distinct groups based on their similarities. Here's an overview of each method along with their advantages and disadvantages:
+</p>
+<h2>K-Means</h2>
+<ol>
+    <li><b>Algorithm Overview:</b> K-Means is a centroid-based clustering algorithm where the data points are assigned to the nearest centroid. The algorithm iteratively updates the centroids until convergence, minimizing the within-cluster variance.</li>
+   <li>
+   <b>Advantages:</b>
+    <ul>
+        <li><b>Simplicity:</b> K-Means is straightforward to understand and implement.</li>
+        <li><b>Scalability:</b>It works well with large datasets, as its time complexity is linear with the number of data points.</li>
+        <li><b>Efficiency:</b>K-Means converges relatively quickly, especially with well-separated clusters.</li>
+    </ul>
+   </li>
+   <li>
+   <b>Disadvantages:</b>
+    <ul>
+        <li><b>Sensitive to Initial Centroid Selection: </b>Different initializations can lead to different final clusters, impacting the algorithm's performance.</li>
+        <li><b>Assumes Spherical Clusters:</b>K-Means assumes that clusters are spherical and of similar size, which may not hold true for all datasets.</li>
+        <li><b>Need to Specify the Number of Clusters (K):</b>Determining the optimal number of clusters (K) can be challenging and may require domain knowledge or heuristics.</li>
+    </ul>
+    </li>
+</ol>
+<h2>DBSCAN</h2>
+<ol>
+    <li><b>Algorithm Overview:</b>DBSCAN is a density-based clustering algorithm that groups together data points that are closely packed, marking outliers as noise. It does not require the number of clusters to be specified in advance.</li>
+   <li>
+   <b>Advantages:</b>
+    <ul>
+        <li><b>Ability to Detect Arbitrary Shaped Clusters:</b>DBSCAN can identify clusters of various shapes and sizes, unlike K-Means, which assumes spherical clusters.</li>
+        <li><b>Robust to Noise:</b>DBSCAN automatically identifies and ignores outliers as noise, making it robust to noise in the dataset.</li>
+        <li><b>No Need to Specify the Number of Clusters:</b>DBSCAN determines the number of clusters automatically based on the data density.</li>
+    </ul>
+   </li>
+   <li>
+   <b>Disadvantages:</b>
+    <ul>
+        <li><b>Sensitivity to Distance Metric and Epsilon Parameter:</b>The performance of DBSCAN can be influenced by the choice of distance metric and the epsilon parameter, which defines the neighborhood size.</li>
+        <li><b>Difficulty in Handling Varying Density: </b>DBSCAN may struggle with datasets containing clusters of varying densities, as it relies on a single epsilon parameter for density estimation.</li>
+        <li><b>Computationally Intensive for Large Datasets: </b>DBSCAN's time complexity is higher compared to K-Means, especially for large datasets, as it needs to calculate distances between each pair of data points.</li>
+    </ul>
+    </li>
+</ol>
+<h2>Comparison:</h2>
+<ul>
+    <li><b>Flexibility:</b>DBSCAN is more flexible in identifying clusters of arbitrary shapes and sizes, while K-Means assumes spherical clusters.</li>
+    <li><b>Noise Handling:</b>DBSCAN automatically identifies and ignores outliers, whereas K-Means may assign noise points to the nearest centroid.</li>
+    <li><b>Parameter Sensitivity:</b>DBSCAN requires tuning of parameters like epsilon and minPts, while K-Means primarily requires specifying the number of clusters (K).</li>
+    <li><b>Scalability:</b>K-Means tends to be more scalable and efficient for large datasets compared to DBSCAN.</li>
+</ul>
+<p>Choosing between K-Means and DBSCAN depends on the dataset characteristics, the desired cluster shapes, and the presence of noise. For datasets with well-defined, spherical clusters and known or easily determinable K, K-Means may be preferable. On the other hand, for datasets with complex shapes, varying densities, or significant noise, DBSCAN might yield better results.</p>
+<h2>PCA</h2>
+<p>PCA stands for Principal Component Analysis. It's a statistical technique used for dimensionality reduction in data analysis and machine learning. The primary goal of PCA is to reduce the dimensionality of a dataset while retaining as much of the variation present in the original dataset as possible. This reduction in dimensionality helps in simplifying the dataset, making it easier to visualize, analyze, and process, while still capturing the essential features of the data.</p>
+<p><b>how does it work?</b> <ol> <li><b>Data Standardization:</b>PCA typically starts with standardizing the data to have a mean of 0 and a standard deviation of 1 across each feature</li> <li><b>Covariance Matrix Computation:</b> PCA computes the covariance matrix of the standardized data</li> <li><b>Eigenvalue Decomposition:</b>The covariance matrix is then decomposed into its eigenvectors and eigenvalues.</li> <li><b>Selection of Principal Components:</b>The eigenvectors are ranked in order of their corresponding eigenvalues</li> <li><b>Projection:</b> Finally, the original data is projected onto the subspace spanned by the selected principal components.</li> </ol></p>
+</div>
+<div class="cell code" data-execution_count="20" data-ExecuteTime="{&quot;end_time&quot;:&quot;2024-04-22T18:22:01.234275Z&quot;,&quot;start_time&quot;:&quot;2024-04-22T18:21:43.920613Z&quot;}" data-collapsed="true">
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> keras.applications <span class="im">import</span> VGG16</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> keras.models <span class="im">import</span> Model</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> KMeans , DBSCAN</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> cv2</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>image_folder <span class="op">=</span> <span class="st">&quot;flower_images&quot;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>csv_file <span class="op">=</span> <span class="st">&quot;flower_labels.csv&quot;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>true_labels <span class="op">=</span> pd.read_csv(csv_file)[<span class="st">&#39;label&#39;</span>].values</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>image_files <span class="op">=</span> os.listdir(image_folder)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>image_size <span class="op">=</span> (<span class="dv">224</span>,<span class="dv">224</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> image_preprocess(path,target_size):</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    image <span class="op">=</span> cv2.imread(path)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    image <span class="op">=</span> cv2.resize(image,target_size)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    image <span class="op">=</span> image <span class="op">/</span> <span class="fl">255.0</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> image</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>images <span class="op">=</span> []</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> image_file <span class="kw">in</span> image_files :</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    image_path <span class="op">=</span> os.path.join(image_folder,image_file)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    image <span class="op">=</span> image_preprocess(image_path,image_size)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    images.append(image)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>images <span class="op">=</span> np.array(images)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>base_model <span class="op">=</span> VGG16(weights<span class="op">=</span><span class="st">&#39;imagenet&#39;</span>,include_top<span class="op">=</span><span class="st">&quot;False&quot;</span>,input_shape<span class="op">=</span>(image_size[<span class="dv">0</span>],image_size[<span class="dv">1</span>],<span class="dv">3</span>))</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>conv_output <span class="op">=</span> base_model.get_layer(<span class="st">&#39;block5_conv3&#39;</span>).output</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>features_extractor <span class="op">=</span> Model(inputs<span class="op">=</span>base_model.<span class="bu">input</span>,outputs<span class="op">=</span>conv_output)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>features <span class="op">=</span> features_extractor.predict(images)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>features <span class="op">=</span> features.reshape(features.shape[<span class="dv">0</span>],<span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>pca <span class="op">=</span> PCA(n_components<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>reduced_features <span class="op">=</span> pca.fit_transform(features)</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>kmeans <span class="op">=</span> KMeans(n_clusters<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>kmeans_clusters <span class="op">=</span> kmeans.fit_predict(reduced_features)</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>dbscan <span class="op">=</span> DBSCAN(eps<span class="op">=</span><span class="fl">3.2</span>,min_samples<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>dbscan_clusters <span class="op">=</span> dbscan.fit_predict(reduced_features)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>cluster_index <span class="op">=</span> np.where(dbscan_clusters <span class="op">==</span> dbscan_clusters[<span class="dv">0</span>])[<span class="dv">0</span>][<span class="dv">0</span>]</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>cluster_index_c <span class="op">=</span> np.where(kmeans_clusters <span class="op">==</span> kmeans_clusters[<span class="dv">0</span>])[<span class="dv">0</span>][<span class="dv">0</span>]</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(kmeans_clusters[:<span class="dv">30</span>])</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dbscan_clusters[:<span class="dv">30</span>])</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>7/7 ━━━━━━━━━━━━━━━━━━━━ 15s 2s/step
+[2 0 7 4 0 0 6 4 4 0 4 6 6 9 3 0 2 6 6 4 9 1 3 1 2 5 7 6 3 6]
+[ 0  0  1  0  0  0  0  0  0  0  0  0  0 -1  2  0  0  0  0  0  3  4  2  4
+  0  0  1  0 -1  0]
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" data-collapsed="false">
+<h1>the appropriate K is approximatley same as true labels number that we can set it with test and fail and evaluate our final labaling with real labels </h1>
+</div>
+<div class="cell markdown" data-collapsed="false">
+<h1>Validating</h1>
+<p>Homogeneity and silhouette are both validation metrics commonly used to assess the quality of clustering algorithms, including those applied to image clustering.</p>
+<ol>
+    <li><b>Homogeneity: </b>Homogeneity measures the degree to which each cluster contains only members of a single class. In the context of image clustering, homogeneity assesses whether the clusters formed by the algorithm represent distinct and homogeneous groups of similar images. A high homogeneity score indicates that the clusters are composed mostly of images from the same class or category, while a low score suggests that the clusters contain mixed or heterogeneous images.</li>
+    <li><b>Silhouette Score: </b> Silhouette analysis measures how similar an object is to its own cluster (cohesion) compared to other clusters (separation). For each sample, the silhouette score ranges from -1 to 1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters. A silhouette score close to 1 suggests that the sample is appropriately clustered, while a score near -1 indicates that the sample might be misclassified. In the context of image clustering, silhouette analysis helps to evaluate the compactness and separation of clusters formed by the algorithm.</li>
+</ol>
+</div>
+<div class="cell code" data-execution_count="21" data-ExecuteTime="{&quot;end_time&quot;:&quot;2024-04-22T18:22:10.325107Z&quot;,&quot;start_time&quot;:&quot;2024-04-22T18:22:10.303106Z&quot;}" data-collapsed="false">
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> homogeneity_score , silhouette_score</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>homogeneity_kmeans <span class="op">=</span> homogeneity_score(true_labels, kmeans_clusters)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Homogeneity score for KMeans:&quot;</span>, homogeneity_kmeans)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>silhouette_kmeans <span class="op">=</span> silhouette_score(reduced_features, kmeans_clusters)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Silhouette score for KMeans:&quot;</span>, silhouette_kmeans)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>homogeneity_dbscan <span class="op">=</span> homogeneity_score(true_labels, dbscan_clusters)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Homogeneity score for DBSCAN:&quot;</span>, homogeneity_dbscan)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>silhouette_dbscan <span class="op">=</span> silhouette_score(reduced_features, dbscan_clusters)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Silhouette score for DBSCAN:&quot;</span>, silhouette_dbscan)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Homogeneity score for KMeans: 0.3628171434129476
+Silhouette score for KMeans: 0.34192112
+Homogeneity score for DBSCAN: 0.20004280943208474
+Silhouette score for DBSCAN: 0.11665714
+</code></pre>
+</div>
+</div>
+</body>
+</html>
